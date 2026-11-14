@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="gg-title gg-desc" width="606" height="232.1" viewBox="0 0 606 232.1" style="max-width:100%;height:auto" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, &quot;Noto Sans Thai&quot;, Helvetica, Arial, sans-serif" font-size="13">
+<title id="gg-title">Commit graph – Git history graph</title>
+<desc id="gg-desc">Vertical Git commit graph with 1 commits, 0 merge commits and 1 branch lines. Newest commits are at the top; the oldest commit is at the bottom.</desc>
+<style>
+.bg{fill:#ffffff}
+.surface{fill:#f6f8fa}
+.border{stroke:#d1d9e0}
+.text{fill:#1f2328}
+.muted{fill:#59636e}
+.node{fill:#ffffff}
+.ink{stroke:#1f2328}
+.accent{fill:#8a5200}
+.onsign{fill:#ffffff}
+</style>
+<rect class="bg" x="0" y="0" width="606" height="232.1" rx="8"/>
+<text class="text" x="24" y="42" font-size="18" font-weight="600">Commit graph</text>
+<text class="muted" x="24" y="64" font-size="11">1 commits · 0 merges · 1 branches · 0 tags</text>
+<g class="legend">
+<g><title>main</title><line x1="24" y1="81" x2="48" y2="81" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round"/><circle class="node" cx="36" cy="81" r="3.5" stroke="#2563eb" stroke-width="2"/><text class="text" x="54" y="85" font-size="12">main</text></g>
+</g>
+<g class="edges" fill="none" stroke-linecap="round" stroke-linejoin="round">
+</g>
+<g class="nodes">
+<g><title>ddc9a01 – Add new file 'hi' with greeting texthi initial (root) commit Author: GuszilaKung Reachable from: main, origin/main</title><rect class="terminus" x="25.5" y="131.57" width="13" height="13" rx="2" fill="#2563eb"/></g><text class="text" x="62" y="145.65">Add new file 'hi' with greeting texthi</text><text class="muted" x="62" y="162.02" font-size="11">ddc9a01</text><g><rect x="62" y="110" width="40.84" height="18" rx="3" fill="#2563eb"/><text class="onsign" x="69" y="122.85" font-size="11" font-weight="600">main</text></g><g><rect class="node" x="108.84" y="110" width="81.32" height="18" rx="3" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="3 2"/><text class="text" x="115.84" y="122.85" font-size="11">origin/main</text></g>
+</g>
+<line class="border" x1="24" y1="178.15" x2="582" y2="178.15" stroke-width="1" stroke-dasharray="4 4"/>
+<text class="muted" x="24" y="201.15" font-size="11">End of graph · initial commit ddc9a01</text>
+</svg>

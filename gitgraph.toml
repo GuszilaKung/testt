@@ -1,0 +1,61 @@
+# GitGraph configuration. Every key is optional; the values shown are the defaults.
+# Reference: docs/configuration.md
+
+[output]
+svg = "docs/gitgraph.svg"      # where the SVG is written (relative to the repository)
+# json = "docs/gitgraph.json"  # optional extra JSON layout output
+
+[history]
+branches = true                # local branches
+remotes = true                 # remote-tracking branches
+tags = true
+# include = ["main", "release/*"]   # fnmatch patterns on ref names; empty = everything
+exclude = ["gitgraph-assets", "*/gitgraph-assets"]  # never graph the artifact branch
+max_commits = 0                # 0 = every reachable commit
+# primary_branch = "main"      # default: origin/HEAD, then main, master, current branch
+latest_tag = "auto"            # auto | version | date
+
+[display]
+title = "Commit graph"
+show_title = true
+legend = true
+release_summary = true         # latest tag line above the graph
+tags = true
+branch_labels = true
+sha = true
+author = false
+date = false
+message_mode = "subject"       # subject | full
+max_label_lines = 3
+
+[layout]
+label_width = 520
+font_size = 13
+node_radius = 6
+line_width = 3.5
+lane_spacing = 22
+
+[theme]
+name = "light"                 # light | dark | auto (follows the viewer's colour scheme)
+responsive = true
+# palette = ["#3b82f6", "#ea580c", "#059669"]
+
+[links]
+# repository_url = "https://github.com/OWNER/REPO"   # enables commit/tag links in the SVG
+
+[readme]
+path = "README.md"
+heading = "Commit graph"
+heading_level = 2
+insert = "none"                # none | append | prepend | after-first-heading
+# image = "https://raw.githubusercontent.com/OWNER/REPO/gitgraph-assets/gitgraph.svg"
+alt = "Git commit graph"
+cache_bust = false
+
+[publish]
+# Shared mode (`gitgraph init --shared`): one SVG on a separate branch, referenced by every
+# branch's README, so the graph is identical and current everywhere.
+# enabled = false
+# branch = "gitgraph-assets"
+# remote = "origin"
+# file = "gitgraph.svg"
